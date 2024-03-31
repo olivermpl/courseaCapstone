@@ -1,0 +1,98 @@
+.hero {
+  background-color: #495e57;
+  padding-top: 1rem;
+  max-height: 300px;
+  padding-bottom: 1rem;
+}
+
+.hero article {
+  grid-column: 3/6;
+}
+.hero div {
+  grid-column: 8/11;
+  overflow: hidden;
+  margin-right: -20px;
+  z-index: 10;
+}
+.hero div img {
+  width: 100%;
+  border-radius: 16px;
+  max-height: 350px;
+  object-fit: cover;
+}
+.hero {
+  color: white;
+}
+
+.specials {
+  padding-top: 100px;
+  background-color: white;
+  padding-bottom: 100px;
+}
+.specials-header {
+  grid-column: 1/13;
+  padding: 0 !important;
+}
+.specials-header h1 {
+  grid-column: 3/8;
+}
+
+.specials-header button {
+  grid-column: 10;
+  justify-self: end;
+}
+
+.menuCard-container {
+  grid-column: 3/11;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menuCard {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.menuCard img {
+  width: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.menuCard section {
+  background-color: #edefee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+.menuCard section div {
+  display: flex;
+  justify-content: space-between;
+}
+.menuCard-name {
+  font-weight: 800;
+}
+.menuCard-price {
+  color: #ee9972;
+  font-weight: 600;
+}
+.menuCard-text {
+  font-size: 14px;
+}
+
+.menuCard section a {
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+}
+
+.menuCard section a:hover {
+  text-decoration: underline;
+}

@@ -36,3 +36,88 @@
     transform: rotate(360deg);
   }
 }
+
+#root header,
+#root main > div,
+#root footer,
+.specials-header {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+@media screen and (min-width: 768px) {
+  #root header,
+  #root main > div,
+  #root footer,
+  .specials-header {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    gap: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #root header,
+  #root main > div,
+  #root footer,
+  .specials-header {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+
+p,
+span,
+a {
+  font-family: 'Karla', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1 {
+  font-family: 'Markazi Text', serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 60px;
+  margin: 0;
+}
+h2 {
+  font-family: 'Markazi Text', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  margin: 0;
+}
+
+.btn-primary {
+  border-radius: 16px;
+  background-color: #f4ce14;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  border: none;
+  max-height: 50px;
+  min-width: min-content;
+}
+
+.btn-primary:hover {
+  cursor: pointer;
+  filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+    drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+}
+.btn-primary span,
+a {
+  font-weight: 800;
+  white-space: nowrap;
+  color: black;
+  text-decoration: none;
+}
